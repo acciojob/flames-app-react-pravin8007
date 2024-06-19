@@ -47,9 +47,10 @@ const App = () => {
         
         return(
             <div id="main">
-              <input type="text" placeholder="Enter first name" value={name1} onChange={(e) => setName1(e.target.value)} data-testid="input2" />
+              <input type="text" name="name1" placeholder="Enter first name" value={name1} onChange={(e) => setName1(e.target.value)} data-testid="input1" />
                 <input
                     type="text"
+                    name="name2"
                     placeholder="Enter second name"
                     value={name2}
                     onChange={(e) => setName2(e.target.value)}
